@@ -160,13 +160,13 @@ const textBox = document.querySelector("textarea.res");
 button.addEventListener("click", () => {
   textBox.select();
   let textValue = textBox.value;
-  button.innerText = "copied";
+  button.innerText = "Copied";
   if (textValue == "") {
     alert("is empty!");
   } else {
     navigator.clipboard.writeText(textValue);
     setTimeout(() => {
-      button.innerText = "copy again";
+      button.innerText = "Copy again";
     }, 1000);
   }
 });
