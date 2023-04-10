@@ -39,3 +39,24 @@
   cursor: pointer;
 }
 
+  
+  .forms .container :where( button) {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .forms .container button {
+    background: #53e5fc;
+    color: #ffff;
+  }
+  
+  .forms button:hover {
+    background: #90e5fc;
+  }
+  
+
