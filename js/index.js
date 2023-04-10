@@ -153,3 +153,20 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const button = document.querySelector("button");
+const textBox = document.querySelector("textarea.res");
+
+button.addEventListener("click", () => {
+  textBox.select();
+  let textValue = textBox.value;
+  button.innerText = "copied";
+  if (textValue == "") {
+    alert("is empty!");
+  } else {
+    navigator.clipboard.writeText(textValue);
+    setTimeout(() => {
+      button.innerText = "copy again";
+    }, 1000);
+  }
+});
