@@ -814,5 +814,25 @@ header p {
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
+  .forms .container :where( button) {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .forms .container button {
+    background: #f24259;
+    color: #ffff;
+  }
+  
+  .forms button:hover {
+    background: #90e5fc;
+  }
+  
+  
   
   
